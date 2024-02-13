@@ -20,7 +20,7 @@ void insertionsort(int *array, int n){
 }
 
 int missing(int *array, int n){
-    insertionsort(&array, n);
+    insertionsort(array, n);
     for(int i=0;i<n-1;i++){
         if(array[i+1]-array[i]==2){
             return array[i]+1;
@@ -35,7 +35,7 @@ int main(){
     scanf("%d", &n);
     int *array=malloc(n*sizeof(int));
     for(int i=0;i<n;i++){
-        scnaf("%d", &array[i]);
+        scanf("%d", array[i]);
     }
     printf("missing: %d\n", missing(array,n));
 }
