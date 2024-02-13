@@ -20,6 +20,12 @@ void insertionsort(int *array, int n){
 }
 
 int missing(int *array, int n){
+    insertionsort(&array, n);
+    for(int i=0;i<n-1;i++){
+        if(array[i+1]-array[i]==2){
+            return array[i]+1;
+        }
+    }
 
 }
 
