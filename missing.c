@@ -35,7 +35,7 @@ int main(){
     scanf("%d", &n);
     int *array=malloc(n*sizeof(int));
     for(int i=0;i<n;i++){
-        scanf("%d", array[i]);
+        scanf("%d", &array[i]);
     }
     printf("missing: %d\n", missing(array,n));
 }
